@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="MobileCloudLab.GamePage"
+    Title="Game App">
+
+        <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="labelStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="Small" />
+                <Setter Property="TextColor" Value="#404040" />
+            </Style>
+            <Style x:Key="fieldStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="Small" />
+                <Setter Property="Margin" Value="10,0,0,0" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    <StackLayout>
+        <Grid BackgroundColor="Silver" Padding="10, 10, 10, 10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <Button x:Name="getGameBtn" 
+                Text="Get Game"                     
+                BorderWidth="1"
+                BorderColor="White"
+                BackgroundColor="DarkGray"
+                TextColor="White"
+                Clicked="GetGameBtn_Clicked"/>
+        </Grid>
+        <ScrollView VerticalOptions="FillAndExpand">
+            <StackLayout Padding="10,10,10,10" HorizontalOptions="Start">
+                <Label Text="Home Team" Style="{StaticResource labelStyle}" />
+                <Label Text="{Binding HomeTeam.FullName}" Style="{StaticResource fieldStyle}" />
+                
+                <Label Text="Away Team" Style="{StaticResource labelStyle}" />
+                <Label Text="{Binding AwayTeam.FullName}" Style="{StaticResource fieldStyle}" />
+
+                <Label Text="Score" Style="{StaticResource labelStyle}" />
+                <Label Text="{Binding BoxScore}" Style="{StaticResource fieldStyle}"/>
+                
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>
