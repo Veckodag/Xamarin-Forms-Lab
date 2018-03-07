@@ -4409,6 +4409,9 @@ namespace MobileCloudLab.Droid
 			// aapt resource value: 0x7f0b004d
 			public const int RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = 2131427405;
 			
+			// aapt resource value: 0x7f0b018c
+			public const int SplashScreen = 2131427724;
+			
 			// aapt resource value: 0x7f0b00dd
 			public const int TextAppearance_AppCompat = 2131427549;
 			
@@ -5014,9 +5017,6 @@ namespace MobileCloudLab.Droid
 			
 			// aapt resource value: 0x7f0b000a
 			public const int Widget_MediaRouter_MediaRouteButton = 2131427338;
-			
-			// aapt resource value: 0x7f0b018c
-			public const int splashscreen = 2131427724;
 			
 			static Style()
 			{

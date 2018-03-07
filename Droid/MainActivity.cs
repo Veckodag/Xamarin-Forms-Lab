@@ -22,7 +22,6 @@ namespace MobileCloudLab.Droid
             base.OnCreate(bundle);
 
             Xamarin.Forms.Forms.Init(this, bundle);
-
             LoadApplication(new App());
         }
     }

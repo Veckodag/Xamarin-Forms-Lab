@@ -10,7 +10,8 @@ using Android.Support.V7.App;
 
 namespace MobileCloudLab.Droid
 {
-    [Activity(Label = "MobileCloudLab.Droid", Icon = "@drawable/icon", Theme = "@style/splashscreen", MainLauncher = true, NoHistory = true)]
+    //Change the MainLauncher to true for it fo first, Theme = "@style/SplashScreen"
+    [Activity(Label = "MobileCloudLab.Droid", Icon = "@drawable/icon", Theme = "@style/SplashScreen", MainLauncher = true, NoHistory = true)]
     public class SplashActivity : AppCompatActivity
     {
         protected override void OnResume()

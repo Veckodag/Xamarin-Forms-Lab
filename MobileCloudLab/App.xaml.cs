@@ -9,6 +9,7 @@ namespace MobileCloudLab
             InitializeComponent();
 
             //MainPage = new MobileCloudLabPage();
+            //Will launch the game page: 
             MainPage = new NavigationPage(new GamePage());
         }
 
